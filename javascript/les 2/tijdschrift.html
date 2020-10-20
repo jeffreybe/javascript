@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		* {
+			font-family: lato, sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		let tijdschrift = prompt("Hoe noemt het tijdschrift?");
+		let kostprijs = prompt("Hoeveel kost het?");
+		let aantal = prompt("Hoeveel wil je er kopen?");
+		let totaal = parseFloat(kostprijs) * parseFloat(aantal);
+        document.write(`
+			<p>Het tijdschrift is ${tijdschrift}, het type hiervan is ${typeof tijdschrift}.</p>
+			<p>De kostprijs van 1 exemplaar is ${kostprijs}, het type hiervan is ${typeof kostprijs}.</p>
+			<p>Het aantal exemplaren dat je wil kopen is: ${aantal}, het type hiervan is ${typeof aantal}.</p>
+			<p>De totale prijs is dan ${totaal}`);
+
+	</script>
+</body>
+</html>

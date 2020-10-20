@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		let diameter = prompt("Wat is de diameter van de cirkel?")
+		let straal = parseFloat(diameter)/2;
+		let omtrek = straal * 3.14 * 2;
+		let oppervlakte = 3.14 * straal * straal;
+		console.log(omtrek);
+		console.log(oppervlakte);
+		document.write(`<p>De diameter van de cirkel is ${diameter}. De omtrek is dan ${omtrek.toFixed(2)} en de oppervlakte ${oppervlakte.toFixed(2)}`)
+	</script>
+</body>
+</html>
