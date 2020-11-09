@@ -3,11 +3,95 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		* {
+			font-family: Impact;
+			text-transform: uppercase;
+			color: red;};
+		}
+	</style>
 	<title>Document</title>
 </head>
 <body>
 	<script>
-	
+
+	 let maanden = ["januari", "februari", "maart"];
+	 maanden [3]= "april";
+	 maanden [4]= "mei";
+	 maanden [5]= "juni";
+	 maanden.push("juli");
+	 maanden.push("augustus", "september", "oktober","november","december");
+	 document.write(`<p>${maanden}</p>`);
+	 document.write(`<p>Er zijn ${maanden.length} maanden in de array</p>`);
+	 let positieMarch = maanden.indexOf("March");
+	 document.write(`<p>De maand "March" bevindt zich in de array op positie: ${positieMarch}</p>`)
+
+
+
+// ░░░░░░░░░░▄▄▄▄▄▄▄▄▄▄▄▄▄▄░░░░░░░░░░░░░
+// ░░░░░░▄▄█▀▀░░░░░░░░░░░░▀██▄▄▄▄▄░░░░░░
+// ░░░░▄█▀░▄▄█▀▀▀▀░░░░░░░░░░░░▄█████▄░░░
+// ░░▄█▀▄▄█▀░▄▀▀▀▀█▄░░░░░░░░▄▀▀░░▄██▄░░░
+// ░▄▀░▀▀▀░▄▀░░░░░░░█░░░░░░█░░░░░▀▀░█░░░
+// ░█░░░░░░█░▄▄▄░░░░█▄░░░░░█░░░░░░░▄█▄░░
+// █▀░░░░░▀█▄▀█▀░░░░█░░░░░░▀▄▄▄▄▄▄██▄█░░
+// █░░░░░░░░▀▀▄▄▄▄▄▀░░░░░░░░░▄▀░░▄▄░▀█▄░
+// █░░░░░░░░░░░░░░░░░░░░▄░▀▀█▀░█▀░▀▀▄░█░
+// █░░░░░░░░░░░░░░░░░░░░░░░█▀░█▀▀▀▀██░▀█
+// █░░░░░░░░░░░░░░░░░░░░░░░█░▄█▀▀▀▀▀███░
+// █░░░░░░░░░░░░░░░░░░░░░░░█░██░░░░░█░█░
+// ▀█░░░░░░░░░░░░░░░░░░░░░░████░░░░█▀█▀░
+// ░█░░░░░░░░░░░░░░░░░░░░░░███▀░░░░█░█░░
+// ░░█░░░░░░░░░░░░░░░░░░░░░█░█░░░░░█░░█░
+// ░░▀▄░░░░░░░░░░░░░░░░░░░▄▀░█▀▀▀▄░▀▄░█░
+// ░░░▀▄░░░░░░░░░░░░▄▄░░░░█░░█▄▄▄▄█▄█░█░
+// ░░░░▀▄░░░░░░░░░░░░░▀▀▄░█░░█▄██▀▄█░░█░
+// ░░░░░▀█░░░░░░░░░░░░░░░▀█░░█▄░░▀█▀░▄▀░  //
+
+
+let namen = [" Erik", " Sofie", " Adam", " Zorro"];
+document.write(`<p>De gesorteerde namen zijn:${namen.sort()}</p>`);
+let naamVinden = prompt("Wie zoekt u?");
+document.write(`<p>De naam ${naamVinden} bevindt zich op positie ${naamVinden.indexOf()}</p>`);
+
+
+
+// ░░░░░░░░░▄██████████▄▄░░░░░░░░
+// ░░░░░░▄█████████████████▄░░░░░
+// ░░░░░██▀▀▀▀▀▀▀▀▀▀▀████████░░░░
+// ░░░░██░░░░░░░░░░░░░░███████░░░
+// ░░░██░░░░░░░░░░░░░░░████████░░
+// ░░░█▀░░░░░░░░░░░░░░░▀███████░░
+// ░░░█▄▄██▄░░░▀█████▄░░▀██████░░
+// ░░░█▀███▄▀░░░▄██▄▄█▀░░░█████▄░
+// ░░░█░░▀▀█░░░░░▀▀░░░▀░░░██░░▀▄█
+// ░░░█░░░█░░░▄░░░░░░░░░░░░░██░██
+// ░░░█░░█▄▄▄▄█▄▀▄░░░░░░░░░▄▄█▄█░
+// ░░░█░░█▄▄▄▄▄▄░▀▄░░░░░░░░▄░▀█░░
+// ░░░█░█▄████▀██▄▀░░░░░░░█░▀▀░░░
+// ░░░░██▀░▄▄▄▄░░░▄▀░░░░▄▀█░░░░░░
+// ░░░░░█▄▀░░░░▀█▀█▀░▄▄▀░▄▀░░░░░░
+// ░░░░░▀▄░░░░░░░░▄▄▀░░░░█░░░░░░░
+// ░░░░░▄██▀▀▀▀▀▀▀░░░░░░░█▄░░░░░░
+// ░░▄▄▀░░░▀▄░░░░░░░░░░▄▀░▀▀▄░░░░
+// ▄▀▀░░░░░░░█▄░░░░░░▄▀░░░░░░█▄░░
+// █░░░░░░░░░░░░░░░░░░░░░░░░░░▀█▄
+// ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+// █▄░░█ █▀▀█ ▀▀█▀▀░░█▀▀█ █▀▀█ █▀▀▄
+// █░█░█ █░░█ ░░█░░░░█▀▀▄ █▄▄█ █░░█
+// █░░▀█ █▄▄█ ░░█░░░░█▄▄█ █░░█ █▄▄▀
+// ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+
+
+let naam = prompt("Wat is uw volledige naam (voornaam achternaam)?");
+let arrayVanNaam = naam.split(" ");
+let reverseNaam = arrayVanNaam.reverse();
+let stringNaam = reverseNaam.join(" ");
+document.write(`<p>Jouw naam genoteerd als familienaam voornaam is:${stringNaam}</p>`)
+
+
+
 	</script>
 </body>
 </html>
