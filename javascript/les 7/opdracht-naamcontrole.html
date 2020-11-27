@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let fout = false;
+		let voornaam = prompt("Wat is uw voornaam");
+		let achternaam = prompt("Wat is uw achternaam");
+
+		function controle(naam) { 
+			if (naam == null) {
+
+				return fout = true
+			}
+
+			else if (length.naam == 0)  {
+				return fout = true
+			}
+
+			else if (length.naam < 2) {
+				return fout = true
+			}
+
+			else { 
+
+				return naam.charAt(0).toUpperCase() + naam.substring(1)
+
+			}
+		}
+
+let controleVoornaam = controle(voornaam);
+let controleAchternaam = controle(achternaam);
+document.write(`Hey ${controleVoornaam} ${controleAchternaam}`);
+
+
+	</script>
+</body>
+</html>

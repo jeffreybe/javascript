@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    let getal1 = prompt("geef een getal");
+    let getal2 = prompt("geef een ander getal");
+
+    function verhouding(nr1, nr2) {
+        if (nr1 < nr2) {
+
+            return "kleiner dan"
+
+        }
+
+        else if (nr1 == nr2) {
+
+            return "even groot als"
+        }
+
+        else {
+
+            return "groter dan"
+        }
+
+    }
+
+    document.write(`${getal1} is ${verhouding(getal1,getal2)} ${getal2}`)
+    </script>
+</body>
+
+</html>

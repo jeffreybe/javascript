@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    let aantal = prompt("Hoeveel automerken wilt u ingeven?");
+
+ 
+
+       if (isNaN(aantal)) {
+            prompt(`Geef het in met cijfers!`)
+        } else if (aantal == null) {
+            prompt(`U heeft geannuleerd!`)
+        } else if (aantal == 0) {
+            prompt(`U heeft niets ingegeven!`)
+        };
+    
+
+    let merk = [];
+
+
+    for (let i = 0; i < aantal; i++) {
+
+        merk.push(prompt(`Geef merk nr.${i+1} in`))
+
+    }
+
+    document.write("<p>U gaf de volgende merken in:</p>")
+
+    for (let j = 0; j < aantal; j++) {
+        document.write(`<p>${j+1}: ${merk[j]} `)
+    }
+
+    console.log()
+    </script>
+</body>
+
+</html>
