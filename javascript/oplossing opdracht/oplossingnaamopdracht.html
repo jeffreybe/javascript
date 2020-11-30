@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+        function controle(input) {
+            if (input == null) {
+                document.write("u heeft geannuleerd!");
+                fout = true;
+            }
+            else if (input.length == 0) {
+                document.write("u heeft niets ingegeven !");
+                fout = true;
+            }
+            else if (input.length < 2) {
+                document.write("Geef minimaal 2 tekens in.");
+                fout = true;
+            }
+            else {
+                return `${input.charAt(0).toUpperCase() + input.substring(1)}`;
+            }
+        }
+
+        let fout = false;
+        let voornaam;
+        let achternaam;
+
+        voornaam = prompt("Geef je voornaam in ajb");
+        voornaam = controle(voornaam);
+        if (!fout) {
+            achternaam = prompt("Geef je achternaam in ajb");
+            achternaam = controle(achternaam);
+            if (!fout) {
+            document.write(`Hey ${voornaam} ${achternaam}`);
+        }
+        }
+        
+    </script>
+</body>
+
+</html>
